@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[35,)"
+license="MIT"
+
+[[mods]]
+modId="jperluxomod"
+version="${version}"
+displayName="JPerluxo Mod"
+description='''A simple mod with some new features for "Minecraft: Java Edition" on pc.'''
+credits="JPerluxo"
+authors="JPerluxo"
+
+[[dependencies.jperluxomod]]
+  modId="forge"
+  mandatory=true
+  versionRange="[35,)"
+  ordering="NONE"
+  side="BOTH"
+
+[[dependencies.jperluxomod]]
+  modId="minecraft"
+  mandatory=true
+  versionRange="[1.16.4,1.17)"
+  ordering="NONE"
+  side="BOTH"

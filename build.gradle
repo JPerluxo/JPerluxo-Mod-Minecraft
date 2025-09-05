@@ -1,0 +1,76 @@
+buildscript {
+  repositories {
+    // Forge Maven repository to fetch ForgeGradle
+    maven { url = 'https://files.minecraftforge.net/maven' }
+    mavenCentral()
+  }
+  dependencies {
+    // ForgeGradle (keeps version wildcard so MDK's recommended FG is used)
+    classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+  }
+}
+
+apply plugin: 'net.minecraftforge.gradle' // ForgeGradle plugin
+
+// Basic project coordinates - change these to your preference
+version = '1.0.0'
+group = 'com.jperluxo'  // reverse-DNS group
+archivesBaseName = 'jperluxomod'  // output JAR name
+
+// Force Java 8 for 1.16.x compatibility
+sourceCompatibility = targetCompatibility = '1.8'
+
+// Minecraft / Forge configuration (minimal)
+minecraft {
+  // MCP mappings used by the MDK (leave as-is for 1.16.4 dev)
+  mappings channel: 'snapshot', version: '20201028-1.16.3'
+
+  // Minimal run configurations: client and server
+  runs {
+    client {
+      workingDirectory project.file('run')
+      // Recommended logging settings for dev
+      property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+      property 'forge.logging.console.level', 'debug'
+
+      mods {
+        // Replace with your mod id and source set
+        jperluxomod {
+          source sourceSets.main
+        }
+      }
+    }
+
+    server {
+      workingDirectory project.file('run')
+      property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+      property 'forge.logging.console.level', 'debug'
+
+      mods {
+        jperluxomod {
+          source sourceSets.main
+        }
+      }
+    }
+  }
+}
+
+// Ensure mods.toml gets the project.version value during resource processing
+processResources {
+    inputs.property "version", project.version
+    filesMatching("META-INF/mods.toml") {
+        expand(version: project.version)
+    }
+}
+
+
+// Include generated resources if you use data-generators later
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+dependencies {
+  // Forge for Minecraft 1.16.4 (use the MDK-provided version)
+  minecraft 'net.minecraftforge:forge:1.16.4-35.1.4'
+}
+
+// Reobfuscation step (keep for normal MDK workflow)
+jar.finalizedBy('reobfJar')

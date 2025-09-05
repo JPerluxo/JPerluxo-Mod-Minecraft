@@ -1,0 +1,28 @@
+# Compiled and cache folders
+/build/
+/out/
+/bin/
+/.gradle/
+/run/
+
+# Log files
+/logs/
+*.log
+
+# Local VSCode settings
+.vscode/*
+!.vscode/tasks.json
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Forge generated files
+src/generated/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Unnecessary MDK files
+forge*changelog.txt
