@@ -57,10 +57,10 @@ minecraft {
 
 // Ensure mods.toml gets the project.version value during resource processing
 processResources {
-    inputs.property "version", project.version
-    filesMatching("META-INF/mods.toml") {
-        expand(version: project.version)
-    }
+  inputs.property "version", project.version
+  filesMatching("META-INF/mods.toml") {
+    expand(version: project.version)
+  }
 }
 
 
