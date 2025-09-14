@@ -42,7 +42,7 @@ A simple add-on with some new features for [Minecraft: Java Edition](https://www
   - Run the Forge installer and make sure it creates a new Forge profile in the Minecraft Launcher.
 
 2. **Download JPerluxo Mod:**
-  - Get the latest release of the mod from the [Releases page](https://github.com/jperluxo/jperluxo-mod-minecraft/releases).
+  - Get the latest release of the mod from the [Releases page](https://github.com/jperluxo/jperluxo-mod-minecraft/tree/main/releases).
 
 3. **Locate the Minecraft mods folder:**
   - On Windows: `C:\Users\<YourUser>\AppData\Roaming\.minecraft\mods`
