@@ -6,6 +6,10 @@
 
 A simple add-on with some new features for [Minecraft: Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc) on pc.
 
+⚠️ **Requirements:**  
+- Minecraft: Java Edition **1.16.4**  
+- Minecraft Forge
+
 <details>
 <summary>Installation</summary>
 
@@ -70,9 +74,10 @@ For more details, see the [LICENSE](LICENSE) file.
 <details>
 <summary>Changelog</summary>
 
-## [1.0.0] - 2025-09-04
+## [1.0.0] - 2025-09-14
 ### Added
 - Initial build.
+- Introduced the **JPerluxo's Sword**, a legendary weapon obtainable only by combining it's shards, got from Villager trades.
 
 
 [1.0.0]: https://github.com/jperluxo/jperluxo-mod-minecraft/releases/tag/1.0.0
