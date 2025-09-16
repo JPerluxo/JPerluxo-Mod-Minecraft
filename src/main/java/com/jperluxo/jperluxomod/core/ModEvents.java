@@ -1,4 +1,4 @@
-package com.jperluxo.jperluxomod;
+package com.jperluxo.jperluxomod.core;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -11,7 +11,7 @@ import net.minecraft.item.MerchantOffer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 
-@Mod.EventBusSubscriber(modid = "jperluxomod")
+@Mod.EventBusSubscriber(modid = "jperluxomod", bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ModEvents {
 
   @SubscribeEvent

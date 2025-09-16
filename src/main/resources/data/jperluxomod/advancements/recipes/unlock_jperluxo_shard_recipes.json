@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jperluxomod:jperluxo_sword",
+      "jperluxomod:jperluxo_helmet",
+      "jperluxomod:jperluxo_chestplate",
+      "jperluxomod:jperluxo_leggings",
+      "jperluxomod:jperluxo_boots"
+    ]
+  },
+  "criteria": {
+    "has_shard": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "jperluxomod:jperluxo_shard" }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["has_shard"]
+  ]
+}

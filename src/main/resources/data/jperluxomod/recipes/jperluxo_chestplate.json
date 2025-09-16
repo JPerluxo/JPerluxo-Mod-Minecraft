@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "F F",
+    "FFF",
+    "FFF"
+  ],
+  "key": {
+    "F": {
+      "item": "jperluxomod:jperluxo_shard"
+    }
+  },
+  "result": {
+    "item": "jperluxomod:jperluxo_chestplate",
+    "count": 1
+  }
+}
