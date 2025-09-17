@@ -7,6 +7,7 @@ modId="jperluxomod"
 version="${version}"
 displayName="JPerluxo Mod"
 description='''A simple mod with some new features for "Minecraft: Java Edition" on pc.'''
+logoFile="logo.png"
 credits="JPerluxo"
 authors="JPerluxo"
 
