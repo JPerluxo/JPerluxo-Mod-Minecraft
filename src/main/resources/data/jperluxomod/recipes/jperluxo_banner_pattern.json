@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "jperluxomod:jperluxo_shard" },
+    { "item": "minecraft:paper" }
+  ],
+  "result": {
+    "item": "jperluxomod:jperluxo_banner_pattern",
+    "count": 1
+  }
+}

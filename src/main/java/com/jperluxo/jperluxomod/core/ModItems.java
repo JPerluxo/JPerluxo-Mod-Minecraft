@@ -9,6 +9,7 @@ import com.jperluxo.jperluxomod.item.JPerluxoArmorItem;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Rarity;
+import com.jperluxo.jperluxomod.item.JPerluxoBannerPatternItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 
 public class ModItems {
@@ -24,6 +25,8 @@ public class ModItems {
   public static final RegistryObject<Item> JPERLUXO_LEGGINGS = ITEMS.register("jperluxo_leggings", () -> new JPerluxoArmorItem(EquipmentSlotType.LEGS));
 
   public static final RegistryObject<Item> JPERLUXO_BOOTS = ITEMS.register("jperluxo_boots", () -> new JPerluxoArmorItem(EquipmentSlotType.FEET));
+
+  public static final RegistryObject<Item> JPERLUXO_BANNER_PATTERN = ITEMS.register("jperluxo_banner_pattern", () -> new JPerluxoBannerPatternItem());
 
   public static final RegistryObject<Item> JPERLUXO_SHARD = ITEMS.register("jperluxo_shard", () -> new Item(new Item.Properties().group(ItemGroup.MISC).rarity(Rarity.RARE).isImmuneToFire().setNoRepair()));
 
