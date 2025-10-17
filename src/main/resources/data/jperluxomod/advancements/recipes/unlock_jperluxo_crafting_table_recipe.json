@@ -20,6 +20,6 @@
     }
   },
   "requirements": [
-    [["has_table"], ["has_blue_dye"], ["has_black_dye"]]
+    ["has_table", "has_blue_dye", "has_black_dye"]
   ]
 }
