@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:crafting_table" },
+    { "item": "minecraft:blue_dye" },
+    { "item": "minecraft:black_dye" }
+  ],
+  "result": {
+    "item": "jperluxomod:jperluxo_crafting_table",
+    "count": 1
+  }
+}

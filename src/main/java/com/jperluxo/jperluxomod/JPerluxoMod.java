@@ -11,6 +11,7 @@ public class JPerluxoMod {
   public JPerluxoMod() {
     IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+    ModBlocks.register(bus);
     ModItems.register(bus);
   }
 }

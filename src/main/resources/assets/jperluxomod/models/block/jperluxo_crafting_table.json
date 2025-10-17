@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "jperluxomod:block/jperluxo_crafting_table_side",
+    "down": "jperluxomod:block/jperluxo_crafting_table_bottom",
+    "up": "jperluxomod:block/jperluxo_crafting_table_top",
+    "north": "jperluxomod:block/jperluxo_crafting_table_front",
+    "south": "jperluxomod:block/jperluxo_crafting_table_side",
+    "east": "jperluxomod:block/jperluxo_crafting_table_side",
+    "west": "jperluxomod:block/jperluxo_crafting_table_front"
+  }
+}
