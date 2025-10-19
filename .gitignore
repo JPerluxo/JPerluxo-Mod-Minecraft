@@ -19,6 +19,7 @@ Thumbs.db
 
 # Forge generated files
 src/generated/
+src/test/
 
 # Temporary files
 *.tmp
