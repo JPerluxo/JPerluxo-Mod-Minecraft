@@ -1,0 +1,21 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "jperluxomod:blaze_sword"
+    ]
+  },
+  "criteria": {
+    "has_blaze_rod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "minecraft:blaze_rod" }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["has_blaze_rod"]
+  ]
+}
