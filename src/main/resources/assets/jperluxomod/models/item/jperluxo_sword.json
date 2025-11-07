@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "jperluxomod:item/jperluxo_sword"
+  }
+}
