@@ -10,14 +10,11 @@ import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Rarity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.world.World;
-import net.minecraft.block.BlockState;
-import net.minecraft.util.math.BlockPos;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraft.item.ItemStack;
 import javax.annotation.Nullable;
+import net.minecraft.world.World;
 import java.util.List;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.client.util.ITooltipFlag;
@@ -51,11 +48,7 @@ public class JPerluxoSword {
       );
     }
 
-    @Override public boolean hitEntity(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-      return false;
-    }
-
-    @Override public boolean onBlockDestroyed(ItemStack stack, World worldIn, BlockState state, BlockPos pos, LivingEntity entityLiving) {
+    @Override public boolean isDamageable() {
       return false;
     }
 
