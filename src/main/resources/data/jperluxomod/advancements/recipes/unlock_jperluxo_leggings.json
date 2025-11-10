@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [ "jperluxomod:jperluxo_leggings" ]
+  },
+  "criteria": {
+    "has_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "minecraft:netherite_leggings" }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["has_leggings"]
+  ]
+}

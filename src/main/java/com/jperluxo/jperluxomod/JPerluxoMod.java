@@ -9,5 +9,6 @@ public class JPerluxoMod {
   public JPerluxoMod() {
     JPerluxoBanner.register();
     JPerluxoSword.register();
+    JPerluxoArmor.register();
   }
 }

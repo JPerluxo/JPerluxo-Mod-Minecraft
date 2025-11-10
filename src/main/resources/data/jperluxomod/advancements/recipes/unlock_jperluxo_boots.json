@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [ "jperluxomod:jperluxo_boots" ]
+  },
+  "criteria": {
+    "has_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "minecraft:netherite_boots" }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["has_boots"]
+  ]
+}

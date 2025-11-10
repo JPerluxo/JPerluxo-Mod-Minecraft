@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [ "jperluxomod:jperluxo_helmet" ]
+  },
+  "criteria": {
+    "has_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "item": "minecraft:netherite_helmet" }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["has_helmet"]
+  ]
+}
