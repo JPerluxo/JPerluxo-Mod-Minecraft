@@ -1,14 +1,14 @@
 # JPerluxo Mod
 ![Version](https://img.shields.io/badge/Version-1.0.5-white.svg)
-![Minecraft](https://img.shields.io/badge/Minecraft-1.16.4-white.svg?labelColor=52a535&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB30lEQVR4nO2dQWrDUBBD53gJvf8F0t5Dpcv/NzVUVuX4PdAugpmRlYA3mQEAAAAAAACAbj5m5mtmhObMG3zOzPNIID8fJIyJ3OB1JBDCmOgNCGQuHgh4IZAyCKQMAimDQMogkDIIpAwCKYNAyiCQMgikDAK5eyDxl28Xm49ANgiEhizQkA0aQkMWaMgGDaEhCzRkg4bQkAUaskFDaMgCDdmgITRkgYZs0BAaskBDNmgIDVmgIRs0hIYs0JC7N+TdDuiGQIZATn2iREP+FxFId8VFQwjECT/q0914v+FkxFcWgZwJDZnuB8xvMA2mMqX29htMg6lMqb39BtNgKlNqb7/BNJjKlNrbbzANpjKl9vYbTIOpTKm9/QbTYCpTam+/wTSYypTa228wDaYypfb2G0yDqUypvf0G02AqU2pvv8E0mMqU2ttvMA2mMqX29htMg6lMqb39BtNgKlNqb7/BNJjKlNrbbzANpjKl9vYbTIOpTKm9/QbTYCpTam+/wTSYypTa228wDabQYQik7DCiIV2HEYF0HUYE0nUYEUjXYUQgXYcRgXQdRgTSdRgRSNdhRCBwiVcnd0UE0gWBvFsgaE69AYFM10P2K/zB/XT9wf2TUCYVxuNIIAAAAAAwf+QbD2H/7GI71IEAAAAASUVORK5CYII=)
+![Minecraft](https://img.shields.io/badge/Minecraft-1.16.5-white.svg?labelColor=52a535&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB30lEQVR4nO2dQWrDUBBD53gJvf8F0t5Dpcv/NzVUVuX4PdAugpmRlYA3mQEAAAAAAACAbj5m5mtmhObMG3zOzPNIID8fJIyJ3OB1JBDCmOgNCGQuHgh4IZAyCKQMAimDQMogkDIIpAwCKYNAyiCQMgikDAK5eyDxl28Xm49ANgiEhizQkA0aQkMWaMgGDaEhCzRkg4bQkAUaskFDaMgCDdmgITRkgYZs0BAaskBDNmgIDVmgIRs0hIYs0JC7N+TdDuiGQIZATn2iREP+FxFId8VFQwjECT/q0914v+FkxFcWgZwJDZnuB8xvMA2mMqX29htMg6lMqb39BtNgKlNqb7/BNJjKlNrbbzANpjKl9vYbTIOpTKm9/QbTYCpTam+/wTSYypTa228wDaYypfb2G0yDqUypvf0G02AqU2pvv8E0mMqU2ttvMA2mMqX29htMg6lMqb39BtNgKlNqb7/BNJjKlNrbbzANpjKl9vYbTIOpTKm9/QbTYCpTam+/wTSYypTa228wDabQYQik7DCiIV2HEYF0HUYE0nUYEUjXYUQgXYcRgXQdRgTSdRgRSNdhRCBwiVcnd0UE0gWBvFsgaE69AYFM10P2K/zB/XT9wf2TUCYVxuNIIAAAAAAwf+QbD2H/7GI71IEAAAAASUVORK5CYII=)
 ![Java](https://img.shields.io/badge/Java-1.8-white.svg?labelColor=ED1D25&logo=openjdk)
 ![Gradle](https://img.shields.io/badge/Gradle-4.10.3-white.svg?labelColor=06A0CE&logo=gradle)
 
 A simple add-on with some new features for [Minecraft: Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc) on pc.
 
 ⚠️ **Requirements:**  
-- Minecraft: Java Edition **1.16.4**  
-- Minecraft Forge
+- Minecraft: Java Edition **1.16.5**
+- Minecraft Forge **36.1.10**
 
 <details>
 <summary>Installation</summary>
@@ -38,7 +38,7 @@ A simple add-on with some new features for [Minecraft: Java Edition](https://www
 
 ## Release
 1. **Install Minecraft Forge:**
-  - Download and install the [Minecraft Forge](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.16.4.html).
+  - Download and install the [Minecraft Forge](https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.5-36.1.10/forge-1.16.5-36.1.10-installer.jar).
   - Run the Forge installer and make sure it creates a new Forge profile in the Minecraft Launcher.
 
 2. **Download JPerluxo Mod:**
@@ -55,7 +55,7 @@ A simple add-on with some new features for [Minecraft: Java Edition](https://www
 
 5. **Launch Minecraft:**
   - Open the Minecraft Launcher.
-  - Select the **Forge 1.16.4** profile.
+  - Select the **Forge 1.16.5** profile.
   - Click **Play**.
 
 6. **Verify installation:**
