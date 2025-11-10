@@ -13,7 +13,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle' // ForgeGradle plugin
 
 // Basic project coordinates - change these to your preference
-version = '1.0.5'
+version = '1.1.0'
 group = 'com.jperluxo'  // reverse-DNS group
 archivesBaseName = 'jperluxomod'  // output JAR name
 
@@ -22,7 +22,7 @@ sourceCompatibility = targetCompatibility = '1.8'
 
 // Minecraft / Forge configuration (minimal)
 minecraft {
-  // MCP mappings used by the MDK (leave as-is for 1.16.4 dev)
+  // MCP mappings used by the MDK (leave as-is for 1.16.5 dev)
   mappings channel: 'snapshot', version: '20201028-1.16.3'
 
   // Minimal run configurations: client and server
