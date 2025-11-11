@@ -1,5 +1,5 @@
 # JPerluxo Mod
-![Version](https://img.shields.io/badge/Version-1.1.0-white.svg)
+![Version](https://img.shields.io/badge/Version-1.1.5-white.svg)
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.16.5-white.svg?labelColor=52a535&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB30lEQVR4nO2dQWrDUBBD53gJvf8F0t5Dpcv/NzVUVuX4PdAugpmRlYA3mQEAAAAAAACAbj5m5mtmhObMG3zOzPNIID8fJIyJ3OB1JBDCmOgNCGQuHgh4IZAyCKQMAimDQMogkDIIpAwCKYNAyiCQMgikDAK5eyDxl28Xm49ANgiEhizQkA0aQkMWaMgGDaEhCzRkg4bQkAUaskFDaMgCDdmgITRkgYZs0BAaskBDNmgIDVmgIRs0hIYs0JC7N+TdDuiGQIZATn2iREP+FxFId8VFQwjECT/q0914v+FkxFcWgZwJDZnuB8xvMA2mMqX29htMg6lMqb39BtNgKlNqb7/BNJjKlNrbbzANpjKl9vYbTIOpTKm9/QbTYCpTam+/wTSYypTa228wDaYypfb2G0yDqUypvf0G02AqU2pvv8E0mMqU2ttvMA2mMqX29htMg6lMqb39BtNgKlNqb7/BNJjKlNrbbzANpjKl9vYbTIOpTKm9/QbTYCpTam+/wTSYypTa228wDabQYQik7DCiIV2HEYF0HUYE0nUYEUjXYUQgXYcRgXQdRgTSdRgRSNdhRCBwiVcnd0UE0gWBvFsgaE69AYFM10P2K/zB/XT9wf2TUCYVxuNIIAAAAAAwf+QbD2H/7GI71IEAAAAASUVORK5CYII=)
 ![Java](https://img.shields.io/badge/Java-1.8-white.svg?labelColor=ED1D25&logo=openjdk)
 ![Gradle](https://img.shields.io/badge/Gradle-4.10.3-white.svg?labelColor=06A0CE&logo=gradle)
@@ -74,6 +74,11 @@ For more details, see the [LICENSE](LICENSE) file.
 <details>
 <summary>Changelog</summary>
 
+## [1.1.5] - 2025-11-11
+### Changed
+- Adjusted the JPerluxo's Armor balance to be closer to Netherite gear, keeping it powerful but more consistent with game mechanics.
+- Updated the Forge 1.16.5 version to the recommended build, improving reability and cohesion.
+
 ## [1.1.0] - 2025-11-10
 ### Added
 - Introduced the **JPerluxo's Armor** — a complete legendary armor set that never wears out, to match the sword.
@@ -98,6 +103,7 @@ For more details, see the [LICENSE](LICENSE) file.
 - Added the **JPerluxo's Banner**, a unique custom banner design.
 
 
+[1.1.5]: https://github.com/jperluxo/jperluxo-mod-minecraft/compare/1.1.0...1.1.5
 [1.1.0]: https://github.com/jperluxo/jperluxo-mod-minecraft/compare/1.0.5...1.1.0
 [1.0.5]: https://github.com/jperluxo/jperluxo-mod-minecraft/compare/1.0.0...1.0.5
 [1.0.0]: https://github.com/jperluxo/jperluxo-mod-minecraft/releases/tag/1.0.0

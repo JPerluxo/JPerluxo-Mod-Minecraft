@@ -48,8 +48,8 @@ public class JPerluxoArmor {
           @Override public int getDamageReductionAmount(@Nonnull EquipmentSlotType slot) {
             switch (slot) {
               case HEAD: return 3;
-              case CHEST: return 6;
-              case LEGS: return 8;
+              case CHEST: return 8;
+              case LEGS: return 6;
               case FEET: return 3;
               default: return 0;
             }
