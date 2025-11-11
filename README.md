@@ -8,7 +8,7 @@ A simple add-on with some new features for [Minecraft: Java Edition](https://www
 
 ⚠️ **Requirements:**  
 - Minecraft: Java Edition **1.16.5**
-- Minecraft Forge **36.1.10**
+- Minecraft Forge **36.2.34**
 
 <details>
 <summary>Installation</summary>
@@ -38,7 +38,7 @@ A simple add-on with some new features for [Minecraft: Java Edition](https://www
 
 ## Release
 1. **Install Minecraft Forge:**
-  - Download and install the [Minecraft Forge](https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.5-36.1.10/forge-1.16.5-36.1.10-installer.jar).
+  - Download and install the [Minecraft Forge](https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.5-36.2.34/forge-1.16.5-36.2.34-installer.jar).
   - Run the Forge installer and make sure it creates a new Forge profile in the Minecraft Launcher.
 
 2. **Download JPerluxo Mod:**
@@ -76,7 +76,7 @@ For more details, see the [LICENSE](LICENSE) file.
 
 ## [1.1.0] - 2025-11-10
 ### Added
-- Introduced the **JPerluxo's Armor** — a complete armor set that never wears out, to match the sword.
+- Introduced the **JPerluxo's Armor** — a complete legendary armor set that never wears out, to match the sword.
 
 ### Changed
 - Refined the JPerluxo's Sword to make its indestructibility smoother and more consistent.

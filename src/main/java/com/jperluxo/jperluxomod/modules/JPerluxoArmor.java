@@ -47,10 +47,10 @@ public class JPerluxoArmor {
           @Override public int getDurability(@Nonnull EquipmentSlotType slot) { return 100_000; }
           @Override public int getDamageReductionAmount(@Nonnull EquipmentSlotType slot) {
             switch (slot) {
-              case HEAD: return 5;
-              case CHEST: return 10;
+              case HEAD: return 3;
+              case CHEST: return 6;
               case LEGS: return 8;
-              case FEET: return 5;
+              case FEET: return 3;
               default: return 0;
             }
           }
@@ -59,7 +59,7 @@ public class JPerluxoArmor {
           @Override public Ingredient getRepairMaterial() { return Ingredient.EMPTY; }
           @Override public String getName() { return "jperluxomod:jperluxo"; }
           @Override public float getToughness() { return 4.0F; }
-          @Override public float getKnockbackResistance() { return 0.1F; }
+          @Override public float getKnockbackResistance() { return 0.2F; }
         },
         slot,
         new Item.Properties().group(ItemGroup.COMBAT).rarity(Rarity.EPIC).isImmuneToFire().setNoRepair()
