@@ -81,7 +81,7 @@ For more details, see the [LICENSE](LICENSE) file.
 
 ## [1.1.0] - 2025-11-10
 ### Added
-- Introduced the **JPerluxo's Armor** — a complete legendary armor set that never wears out, to match the sword.
+- Introduced the **JPerluxo's Armor** — a complete legendary indestructible armor set, to match the sword.
 
 ### Changed
 - Refined the JPerluxo's Sword to make its indestructibility smoother and more consistent.
