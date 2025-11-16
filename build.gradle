@@ -13,7 +13,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle' // ForgeGradle plugin
 
 // Basic project coordinates - change these to your preference
-version = '1.1.5'
+version = '1.2.0'
 group = 'com.jperluxo'  // reverse-DNS group
 archivesBaseName = 'jperluxomod'  // output JAR name
 
