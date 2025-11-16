@@ -6,6 +6,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.IArmorMaterial;
 import javax.annotation.Nonnull;
@@ -24,6 +25,11 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.IFormattableTextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent.PlayerTickEvent;
+import net.minecraftforge.event.TickEvent;
+import net.minecraft.potion.Effects;
+import net.minecraft.potion.EffectInstance;
 
 public class JPerluxoArmor {
 
@@ -37,7 +43,10 @@ public class JPerluxoArmor {
 
   public static final RegistryObject<Item> JPERLUXO_BOOTS = ITEMS.register("jperluxo_boots", () -> new JPerluxoArmorItem(EquipmentSlotType.FEET));
 
-  public static final void register() { ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus()); }
+  public static final void register() {
+    ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    MinecraftForge.EVENT_BUS.register(JPerluxoArmor.class);
+  }
 
   public static final class JPerluxoArmorItem extends ArmorItem {
 
@@ -78,6 +87,25 @@ public class JPerluxoArmor {
     @OnlyIn(Dist.CLIENT)
     public IFormattableTextComponent getDescription() {
       return new TranslationTextComponent(this.getTranslationKey() + ".desc");
+    }
+  }
+
+  @SubscribeEvent
+  public static void onPlayerTick(PlayerTickEvent event) {
+    if (event.player.world.isRemote) return;
+    if (event.phase != TickEvent.Phase.END) return;
+
+    boolean hasHelmet = event.player.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem() == JPERLUXO_HELMET.get();
+    boolean hasChestplate = event.player.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == JPERLUXO_CHESTPLATE.get();
+    boolean hasLeggings = event.player.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem() == JPERLUXO_LEGGINGS.get();
+    boolean hasBoots = event.player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem() == JPERLUXO_BOOTS.get();
+    boolean hasEffects = (event.player.getActivePotionEffect(Effects.REGENERATION) != null && event.player.getActivePotionEffect(Effects.SPEED) != null);
+
+    if (hasHelmet && hasChestplate && hasLeggings && hasBoots) {
+      if (!hasEffects || (event.player.world.getGameTime() % 80L == 0L)) {
+        event.player.addPotionEffect(new EffectInstance(Effects.REGENERATION, 220, 1, false, false, true));
+        event.player.addPotionEffect(new EffectInstance(Effects.SPEED, 220, 1, false, false, true));
+      }
     }
   }
 }
