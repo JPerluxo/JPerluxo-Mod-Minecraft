@@ -6,6 +6,8 @@
 
 A simple add-on with some new features for [Minecraft: Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc) on pc.
 
+![Modrinth](https://img.shields.io/badge/Download_on_Modrinth-gray?style=for-the-badge&logo=modrinth&link=https%3A%2F%2Fmodrinth.com%2Fmod%2Fjperluxo-mod)
+
 ⚠️ **Requirements:**  
 - Minecraft: Java Edition **1.16.5**
 - Minecraft Forge **36.2.34**
@@ -42,7 +44,7 @@ A simple add-on with some new features for [Minecraft: Java Edition](https://www
   - Run the Forge installer and make sure it creates a new Forge profile in the Minecraft Launcher.
 
 2. **Download JPerluxo Mod:**
-  - Get the latest release of the mod from the [Releases page](https://github.com/jperluxo/jperluxo-mod-minecraft/tree/main/releases).
+  - Get the latest release of the mod from [Modrinth](https://modrinth.com/mod/jperluxo-mod) or the [Releases page](https://github.com/jperluxo/jperluxo-mod-minecraft/tree/main/releases).
 
 3. **Locate the Minecraft mods folder:**
   - On Windows: `C:\Users\<YourUser>\AppData\Roaming\.minecraft\mods`
