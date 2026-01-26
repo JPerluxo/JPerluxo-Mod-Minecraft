@@ -6,7 +6,7 @@
 
 A simple add-on with some new features for [Minecraft: Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc) on pc.
 
-![Modrinth](https://img.shields.io/badge/Download_on_Modrinth-gray?style=for-the-badge&logo=modrinth&link=https%3A%2F%2Fmodrinth.com%2Fmod%2Fjperluxo-mod)
+[![Modrinth](https://img.shields.io/badge/Download_on_Modrinth-gray?style=for-the-badge&logo=modrinth)](https://modrinth.com/mod/jperluxo-mod)
 
 ⚠️ **Requirements:**  
 - Minecraft: Java Edition **1.16.5**
