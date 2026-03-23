@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BPD",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "S": { "item": "minecraft:stick" },
+    "P": { "item": "minecraft:blaze_powder" },
+    "B": { "item": "minecraft:black_dye" },
+    "D": { "item": "minecraft:blue_dye" }
+  },
+  "result": {
+    "item": "jperluxomod:jperluxo_staff",
+    "count": 1
+  }
+}
