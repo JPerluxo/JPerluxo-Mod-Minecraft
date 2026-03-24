@@ -22,6 +22,18 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.IFormattableTextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
+import net.minecraft.util.math.vector.Vector3d;
+import net.minecraft.util.SoundEvents;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.entity.projectile.SmallFireballEntity;
+import net.minecraft.stats.Stats;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent.PlayerTickEvent;
+import net.minecraftforge.event.TickEvent;
+import net.minecraft.potion.Effects;
+import net.minecraft.potion.EffectInstance;
 
 public class JPerluxoStaff {
 
@@ -52,6 +64,36 @@ public class JPerluxoStaff {
     @OnlyIn(Dist.CLIENT)
     public IFormattableTextComponent getDescription() {
       return new TranslationTextComponent(this.getTranslationKey() + ".desc");
+    }
+
+    @Override public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
+      ItemStack itemstack = playerIn.getHeldItem(handIn);
+      if (playerIn.getCooldownTracker().hasCooldown(this)) return ActionResult.resultFail(itemstack);
+
+      if (!worldIn.isRemote) {
+        Vector3d look = playerIn.getLookVec();
+        worldIn.playSound(null, playerIn.getPosX(), playerIn.getPosY(), playerIn.getPosZ(), SoundEvents.ENTITY_BLAZE_SHOOT, SoundCategory.PLAYERS, 0.5F, 0.4F / (worldIn.rand.nextFloat() * 0.4F + 0.8F));
+        SmallFireballEntity fireball = new SmallFireballEntity(worldIn, playerIn, look.x * 1.1D, look.y * 1.1D, look.z * 1.1D);
+        fireball.setPosition((playerIn.getPosX() + look.x * 1.0D), (playerIn.getPosYEye() - 0.1D + look.y * 1.0D), (playerIn.getPosZ() + look.z * 1.0D));
+        worldIn.addEntity(fireball);
+      }
+
+      playerIn.addStat(Stats.ITEM_USED.get(this));
+      playerIn.getCooldownTracker().setCooldown(this, 20);
+      return ActionResult.func_233538_a_(itemstack, worldIn.isRemote);
+    }
+  }
+
+  @SubscribeEvent
+  public static void onPlayerTick(PlayerTickEvent event) {
+    if (event.player.world.isRemote) return;
+    if (event.phase != TickEvent.Phase.END) return;
+
+    boolean isEquipped = (event.player.getHeldItemMainhand().getItem() == JPERLUXO_STAFF.get()) || (event.player.getHeldItemOffhand().getItem() == JPERLUXO_STAFF.get());
+    boolean hasEffect = event.player.getActivePotionEffect(Effects.FIRE_RESISTANCE) != null;
+
+    if (isEquipped && (!hasEffect || (event.player.world.getGameTime() % 80L == 0L))) {
+      event.player.addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 220, 0, false, false, true));
     }
   }
 }
