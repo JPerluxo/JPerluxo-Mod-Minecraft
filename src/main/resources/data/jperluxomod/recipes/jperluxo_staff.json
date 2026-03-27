@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "BPD",
-    " S ",
-    " S "
+    " BP",
+    " SD",
+    "S  "
   ],
   "key": {
     "S": { "item": "minecraft:stick" },
