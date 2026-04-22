@@ -75,6 +75,10 @@ public class JPerluxoArmor {
       );
     }
 
+    @Override public boolean isEnchantable(ItemStack stack) {
+      return true;
+    }
+
     @Override public boolean isDamageable() {
       return false;
     }

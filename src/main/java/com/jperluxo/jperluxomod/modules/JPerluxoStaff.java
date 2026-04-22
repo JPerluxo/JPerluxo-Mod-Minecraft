@@ -8,13 +8,17 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Rarity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.Enchantments;
+import java.util.Map;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.block.BlockState;
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraft.item.ItemStack;
 import javax.annotation.Nullable;
 import java.util.List;
 import net.minecraft.util.text.ITextComponent;
@@ -50,6 +54,23 @@ public class JPerluxoStaff {
 
     public JPerluxoStaffItem() {
       super(new Item.Properties().maxStackSize(1).group(ItemGroup.COMBAT).rarity(Rarity.EPIC).isImmuneToFire());
+    }
+
+    @Override public boolean isEnchantable(ItemStack stack) {
+      return true;
+    }
+
+    @Override public int getItemEnchantability() {
+      return 25;
+    }
+
+    @Override public boolean canApplyAtEnchantingTable(ItemStack stack, Enchantment enchantment) {
+      return enchantment == Enchantments.KNOCKBACK;
+    }
+
+    @Override public boolean isBookEnchantable(ItemStack stack, ItemStack book) {
+      Map<Enchantment, Integer> enchants = EnchantmentHelper.getEnchantments(book);
+      return enchants.size() == 1 && enchants.containsKey(Enchantments.KNOCKBACK);
     }
 
     @Override public boolean canPlayerBreakBlockWhileHolding(BlockState state, World worldIn, BlockPos pos, PlayerEntity player) {

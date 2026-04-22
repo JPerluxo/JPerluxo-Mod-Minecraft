@@ -57,6 +57,10 @@ public class JPerluxoSword {
       );
     }
 
+    @Override public boolean isEnchantable(ItemStack stack) {
+      return true;
+    }
+
     @Override public boolean isDamageable() {
       return false;
     }
