@@ -24,6 +24,7 @@ import java.util.List;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.util.text.TextFormatting;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.IFormattableTextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.util.ActionResult;
@@ -80,6 +81,7 @@ public class JPerluxoStaff {
     @OnlyIn(Dist.CLIENT)
     @Override public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
       tooltip.add(this.getDescription().mergeStyle(new TextFormatting[]{TextFormatting.GRAY, TextFormatting.ITALIC}));
+      if (stack.isEnchanted()) tooltip.add(new StringTextComponent(" "));
     }
 
     @OnlyIn(Dist.CLIENT)
